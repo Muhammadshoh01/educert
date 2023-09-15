@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'gt-regular';
+	src: url('../css/fonts/GTWalsheimPro-Regular.ttf');
+}
+@font-face {
+	font-family: 'gt-medium';
+	src: url('../css/fonts/GTWalsheimPro-Medium.ttf');
+}
+@font-face {
+	font-family: 'gt-bold';
+	src: url('../css/fonts/GTWalsheimPro-Bold.ttf');
+}
+
+body {
+	font-family: 'gt-regular';
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+input {
+	&.focus {
+		outline: unset;
+	}
+}
+
+button {
+	cursor: pointer;
+}
