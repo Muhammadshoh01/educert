@@ -4,6 +4,8 @@
 	box-sizing: border-box;
 }
 
+@import './vars.scss';
+
 @font-face {
 	font-family: 'gt-regular';
 	src: url('../css/fonts/GTWalsheimPro-Regular.ttf');
@@ -39,3 +41,36 @@ input {
 button {
 	cursor: pointer;
 }
+
+.container {
+	max-width: 1293px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.title {
+	font-size: 30px;
+	margin-bottom: 10px;
+	font-family: 'gt-bold';
+	color: $blue;
+}
+
+.more {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 17px 29px 13px 29px;
+	background-color: $blue;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 8px;
+	font-family: 'gt-medium';
+	gap: 13px;
+	width: 216px;
+	margin: 0 auto;
+	&:hover {
+		background-color: $darkorange;
+	}
+}
+
+@import './classes.scss';
