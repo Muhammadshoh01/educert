@@ -53,6 +53,7 @@ button {
 	margin-bottom: 10px;
 	font-family: 'gt-bold';
 	color: $blue;
+	font-weight: 700;
 }
 
 .more {
@@ -68,9 +69,35 @@ button {
 	gap: 13px;
 	width: 216px;
 	margin: 0 auto;
+	border: none;
+	&.green {
+		background-color: $green;
+	}
 	&:hover {
 		background-color: $darkorange;
 	}
+}
+.red {
+	background-color: #e8543e26;
+	color: #e8543e;
+}
+
+.ratings {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	.average {
+		font-family: 'gt-medium';
+		color: $darkorange;
+	}
+	.all {
+		font-size: 13px;
+		color: $violet;
+	}
+}
+
+.gap-10 {
+	gap: 10px;
 }
 
 @import './classes.scss';
