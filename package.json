@@ -13,6 +13,7 @@
     "nuxt": "^3.7.3"
   },
   "dependencies": {
+    "nuxt-swiper": "^1.2.2",
     "sass": "^1.67.0",
     "sass-loader": "^13.3.2"
   }
