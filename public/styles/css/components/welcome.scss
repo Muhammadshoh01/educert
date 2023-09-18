@@ -1,0 +1,66 @@
+@import '../vars.scss';
+.welcome {
+	height: calc(100vh - 96px);
+	display: flex;
+	flex-direction: column;
+	&__body {
+		position: relative;
+		flex: 1;
+		display: flex;
+		align-items: center;
+		h1 {
+			color: $blue;
+			font-size: 55px;
+			font-weight: 700;
+			line-height: 80px;
+			text-transform: capitalize;
+			max-width: 50%;
+			font-family: 'gt-bold';
+			span {
+				color: $green;
+				border-bottom: 3px solid $green;
+			}
+		}
+		p {
+			color: $blue;
+			font-size: 17px;
+			line-height: 36px;
+			max-width: 40%;
+			margin-top: 13px;
+			margin-bottom: 27px;
+		}
+
+		img {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			// width: 100%;
+			height: 100%;
+		}
+		.btn {
+			display: flex;
+			align-items: center;
+			&.rounded,
+			&.bordered {
+				border-radius: 100px;
+				padding: 21px 55px;
+				font-family: 'gt-medium';
+			}
+			&.rounded {
+				color: #fff;
+				background-color: $green;
+				&:hover {
+					background-color: darken($green, 20%);
+				}
+			}
+			&.bordered {
+				border: 2px solid $darkviolet;
+				color: $darkviolet;
+				&:hover {
+					background-color: $darkviolet;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

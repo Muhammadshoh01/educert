@@ -1,0 +1,124 @@
+@import '../vars.scss';
+.footer {
+	background-color: #eef2f6;
+	padding: 65px 0 47px 0;
+	.top {
+		padding-bottom: 52px;
+		border-bottom: 1px solid rgba($blue, 0.07);
+	}
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.social {
+		display: flex;
+		gap: 72px;
+		align-items: center;
+		&__title {
+			color: $blue;
+			font-family: 'gt-medium';
+			font-size: 17px;
+			font-weight: 500;
+			line-height: 26px;
+		}
+		&__links {
+			display: flex;
+			gap: 24px;
+			a {
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&:hover {
+					opacity: 0.1;
+					background: $violet;
+					img {
+						filter: brightness(0) invert(1);
+					}
+				}
+			}
+		}
+	}
+	.center {
+		display: flex;
+		align-items: flex-start;
+		padding: 60px 0 140px;
+		.items {
+			.name {
+				color: $blue;
+				font-family: 'gt-medium';
+				font-size: 17px;
+				font-weight: 500;
+				line-height: 26px;
+				text-transform: uppercase;
+				padding-bottom: 26px;
+				min-height: 52px;
+			}
+			ul {
+				color: $violet;
+				font-size: 15px;
+				line-height: 35px;
+				display: flex;
+				flex-direction: column;
+				a {
+					color: $violet;
+					font-size: 13px;
+					cursor: pointer;
+					&:hover {
+						text-decoration: underline;
+						color: $green;
+					}
+				}
+			}
+			p {
+				color: $violet;
+				font-size: 15px;
+				line-height: 30px;
+				padding-bottom: 15px;
+			}
+			.contact {
+				border-radius: 60px;
+				background: #fff;
+				box-shadow: 0px 6px 15px 0px rgba(64, 79, 104, 0.05);
+				display: flex;
+				align-items: center;
+				padding: 10px 10px 10px 30px;
+				input {
+					color: $violet;
+					border: none;
+					outline: none;
+					font-size: 14px;
+				}
+				button {
+					border-radius: 60px;
+					padding: 13px 11px 11px 14px;
+					background: $green;
+					color: #fff;
+					font-size: 14px;
+					border: none;
+				}
+			}
+		}
+	}
+	.bottom {
+		padding: 48px 0;
+		border-top: 1px solid rgba($blue, 0.07);
+		.actions {
+			display: flex;
+			align-items: center;
+			gap: 20px;
+			a {
+				color: $violet;
+				font-size: 13px;
+				cursor: pointer;
+				&:hover {
+					text-decoration: underline;
+					color: $green;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+@import '../vars.scss';
+.courses {
+	&__head {
+		padding: 90px 0 100px;
+		.title {
+			font-size: 40px;
+		}
+		p {
+			color: $violet;
+			font-size: 17px;
+			line-height: 36px; /* 211.765% */
+		}
+	}
+	&__catalog {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+	&__number {
+		font-size: 14px;
+		color: $violet;
+		span {
+			font-family: 'gt-medium';
+			color: $blue;
+			font-weight: 500;
+		}
+	}
+	&__sort {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		span {
+			font-family: 'gt-medium';
+			color: $blue;
+			font-weight: 500;
+			font-size: 14px;
+		}
+		select {
+			padding: 17px 15px;
+			border-radius: 8px;
+		}
+	}
+	.row {
+		row-gap: 30px;
+	}
+}

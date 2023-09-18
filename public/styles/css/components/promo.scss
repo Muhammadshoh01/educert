@@ -1,0 +1,57 @@
+@import '../vars.scss';
+.promo {
+	margin-bottom: 22px;
+	&__body {
+		display: flex;
+		align-items: center;
+		gap: 154px;
+	}
+	&__content {
+		.promo__title {
+			color: $blue;
+			font-family: 'gt-bold';
+			font-size: 45px;
+			font-weight: 700;
+			span {
+				color: $green;
+			}
+		}
+		.promo__text {
+			color: $blue;
+			font-size: 15px;
+			line-height: 26px;
+			margin: 20px 0 56px 0;
+		}
+	}
+	.btns {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		// a {
+		// 	display: block;
+		// }
+		.card {
+			width: 210px;
+			border-radius: 8px;
+			background: #1a064f;
+
+			display: flex;
+			align-items: center;
+			gap: 22px;
+			padding: 14px 23px;
+			color: #fff;
+			cursor: pointer;
+			&:hover {
+				background-color: $darkorange;
+			}
+		}
+		.store {
+			display: block;
+			font-family: 'gt-medium';
+			font-weight: 500;
+		}
+		.download {
+			font-size: 14px;
+		}
+	}
+}

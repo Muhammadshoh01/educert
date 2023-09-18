@@ -1,0 +1,39 @@
+@import '../vars.scss';
+.plus {
+	padding: 120px 0 166px;
+	text-align: center;
+	&__list {
+		p {
+			font-size: 15px;
+			line-height: 26px;
+			color: $violet;
+			margin-bottom: 60px;
+		}
+	}
+	&__img {
+		width: 120px;
+		height: 120px;
+		border-radius: 80px;
+		margin: 0 auto;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&.learn {
+			background-color: #eef8f5;
+		}
+	}
+	&__title {
+		color: $blue;
+		font-family: 'gt-medium';
+		font-size: 18px;
+		font-weight: 700;
+		margin-top: 30px;
+	}
+	&__text {
+		color: $violet;
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 24px; /* 171.429% */
+	}
+}

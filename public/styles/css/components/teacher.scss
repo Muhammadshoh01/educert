@@ -1,0 +1,41 @@
+@import '../vars.scss';
+.teacher {
+	text-align: center;
+	cursor: pointer;
+	&__photo {
+		img {
+			width: 180px;
+			height: 180px;
+			border-radius: 50%;
+		}
+	}
+	&__name {
+		color: $blue;
+		font-family: 'gt-medium';
+		font-size: 17px;
+		font-weight: 500;
+		line-height: 26px;
+		text-transform: capitalize;
+	}
+	&__field {
+		color: $violet;
+		font-size: 15px;
+		line-height: 26px;
+		margin-bottom: 10px;
+	}
+	&__stat {
+		display: flex;
+		align-items: center;
+		gap: 27px;
+		.item {
+			display: flex;
+			gap: 10px;
+			align-items: center;
+		}
+	}
+	.ratings {
+		margin: 15px 0 10px;
+		text-align: center;
+		justify-content: center;
+	}
+}
