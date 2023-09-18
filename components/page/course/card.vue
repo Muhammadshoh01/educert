@@ -18,15 +18,15 @@
 			<div class="card__info">
 				<div class="items">
 					<img src="~/public/img/document.svg" />
-					16 dars
+					<span>16 dars</span>
 				</div>
 				<div class="items">
 					<img src="~/public/img/clock.svg" />
-					+4 soat
+					<span>+4 soat</span>
 				</div>
 				<div class="items">
 					<img src="~/public/img/bar-chart.svg" />
-					Boshlang'ich
+					<span>Boshlang'ich</span>
 				</div>
 			</div>
 			<div class="line"></div>

@@ -1,8 +1,8 @@
 <template>
 	<div class="newslist">
+		<div class="title">So’nggi yangiliklar</div>
+		<p>Platformamiz olib borilayotgan faoliyatdan lavhalar</p>
 		<div class="container">
-			<div class="title">So’nggi yangiliklar</div>
-			<p>Platformamiz olib borilayotgan faoliyatdan lavhalar</p>
 			<div class="newslist__slider">
 				<Swiper
 					:modules="[SwiperAutoplay, SwiperEffectCreative]"

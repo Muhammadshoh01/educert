@@ -4,7 +4,7 @@
 			<div class="title mb-50 text-center">Trenddagi turkumlar</div>
 			<div class="row">
 				<div class="col-6 mb-30" v-for="cat in 8">
-					<div class="category-box">
+					<nuxt-link to="/courses/nodejs" class="category-box">
 						<div class="category-img">
 							<img src="/img/category-1.png" />
 						</div>
@@ -12,7 +12,7 @@
 							<div class="category-title">Marketing</div>
 							<div class="category-stat">573+ kurslar</div>
 						</div>
-					</div>
+					</nuxt-link>
 				</div>
 			</div>
 		</div>
