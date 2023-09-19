@@ -20,7 +20,7 @@
 				<nuxt-link to="/">Mijozlar</nuxt-link>
 			</li>
 			<li>
-				<nuxt-link to="/">Yangiliklar</nuxt-link>
+				<nuxt-link to="/news">Yangiliklar</nuxt-link>
 			</li>
 			<li>
 				<nuxt-link to="/">Aloqa</nuxt-link>
