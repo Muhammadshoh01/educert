@@ -1,7 +1,7 @@
 <template>
 	<div class="card">
-		<nuxt-link to="/" class="card__img">
-			<span class="card__badge top">TOP</span>
+		<nuxt-link to="/courses/nodejs/32" class="card__img">
+			<span class="badge top">TOP</span>
 			<img src="~/public/img/card-photo.png" />
 		</nuxt-link>
 		<div class="card__body">
@@ -12,9 +12,9 @@
 				</div>
 				<div class="all">(1991)</div>
 			</div>
-			<router-link to="/" class="card__title">
+			<nuxt-link to="/courses/nodejs/32" class="card__title">
 				Zero dan Expertgacha Intensiv Python backend dasturlash
-			</router-link>
+			</nuxt-link>
 			<div class="card__info">
 				<div class="items">
 					<img src="~/public/img/document.svg" />
