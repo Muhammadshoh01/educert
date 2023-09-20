@@ -11,7 +11,7 @@
 				<nuxt-link to="/">Biz haqimizda</nuxt-link>
 			</li>
 			<li>
-				<nuxt-link to="/">Kurslar</nuxt-link>
+				<nuxt-link to="/courses">Kurslar</nuxt-link>
 			</li>
 			<li>
 				<nuxt-link to="/">Hamkorlar</nuxt-link>
@@ -23,7 +23,7 @@
 				<nuxt-link to="/news">Yangiliklar</nuxt-link>
 			</li>
 			<li>
-				<nuxt-link to="/">Aloqa</nuxt-link>
+				<nuxt-link to="/contact">Aloqa</nuxt-link>
 			</li>
 		</ul>
 
