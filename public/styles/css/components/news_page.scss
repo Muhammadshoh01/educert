@@ -1,0 +1,83 @@
+@import '../vars.scss';
+.xabar {
+	padding-bottom: 190px;
+	.page__head {
+		text-align: center;
+	}
+	&__img {
+		cursor: pointer;
+		img {
+			border-radius: 8px;
+			height: 400px;
+			// width: 100%;
+			object-fit: contain;
+		}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		margin-bottom: 70px;
+	}
+	&__box {
+		display: flex;
+		align-items: center;
+		gap: 93px;
+		max-width: 1070px;
+		width: 100%;
+		margin: auto;
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	&__head {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		p {
+			color: $green;
+			font-family: 'gt-medium';
+			font-size: 14px;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+	}
+	&__date {
+		color: $violet;
+		font-size: 15px;
+		line-height: 26px;
+	}
+	&__title {
+		color: $darkviolet;
+		font-family: 'gt-medium';
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 35px;
+		cursor: pointer;
+		&:hover {
+			color: $green;
+		}
+	}
+	&__text {
+		color: $violet;
+		font-size: 15px;
+		line-height: 26px;
+	}
+	.more {
+		padding: 18px 29px 15px 29px;
+		border-radius: 8px;
+		background: rgba(100, 64, 251, 0.07);
+		font-size: 15px;
+		font-family: 'gt-medium';
+		color: $green;
+		font-weight: 500;
+		margin-left: 0;
+		cursor: pointer;
+		&:hover {
+			background-color: $darkviolet;
+			color: #fff;
+		}
+	}
+}
