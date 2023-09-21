@@ -1,0 +1,15 @@
+@media (max-width: 1366px) {
+	header {
+		padding: 14px 20px;
+		.links {
+			gap: 30px;
+		}
+	}
+	.welcome__body img {
+		max-width: 60%;
+	}
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
