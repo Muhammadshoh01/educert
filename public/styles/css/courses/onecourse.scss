@@ -1,9 +1,11 @@
 @import '../vars.scss';
 .courses {
-	.badge {
-		position: static;
-		top: 0;
-		left: 0;
+	.kurs__info {
+		.badge {
+			position: static;
+			top: 0;
+			left: 0;
+		}
 	}
 	.kurs {
 		background-image: url('~/public/img/course-bg.png');
@@ -12,8 +14,10 @@
 		margin: 0 auto;
 		position: relative;
 		padding-top: 90px;
-		// padding: 90px 0 90px 105px;
 		color: #fff;
+		&__others {
+			padding-top: 130px;
+		}
 		h3 {
 			font-family: 'gt-bold';
 			font-size: 30px;
@@ -421,6 +425,7 @@
 						display: flex;
 						align-items: stretch;
 						gap: 10px;
+						margin-bottom: 60px;
 					}
 					&__left {
 						width: 35%;
@@ -488,7 +493,131 @@
 						}
 					}
 				}
+				.review__container {
+					display: flex;
+					flex-direction: column;
+					gap: 40px;
+				}
+				.review {
+					display: flex;
+					gap: 20px;
+					align-items: flex-start;
+					padding-bottom: 38px;
+					border-bottom: 1px solid #ededed;
+					&__user {
+						width: 80px;
+						height: 60px;
+						border-radius: 50%;
+						background-color: $blue;
+						color: #fff;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 17px;
+						line-height: 26px;
+						text-transform: capitalize;
+					}
+					&__head {
+						display: flex;
+						align-items: center;
+						gap: 15px;
+						h5 {
+							color: $blue;
+							font-family: 'gt-medium';
+							font-size: 17px;
+							font-weight: 500;
+							line-height: 26px;
+							text-transform: capitalize;
+						}
+						.date {
+							color: $violet;
+							font-size: 13px;
+							font-weight: 400;
+						}
+					}
+					.stars {
+						display: flex;
+						align-items: center;
+						gap: 5px;
+						padding: 10px 0 15px 0;
+					}
+					&__title {
+						font-size: 15px;
+						font-family: 'gt-medium';
+						font-weight: 500;
+						color: $blue;
+						margin-bottom: 10px;
+					}
+					&__text {
+						color: $violet;
+						font-size: 15px;
+						line-height: 26px;
+					}
+				}
+				.more_comment {
+					width: 100%;
+					text-align: center;
+					margin: 65px 0 100px;
+					button {
+						color: $green;
+						font-family: 'gt-medium';
+						font-size: 15px;
+						font-weight: 500;
+						text-decoration-line: underline;
+						background: none;
+						border: none;
+						margin: 0 auto;
+					}
+				}
+			}
+			&__form {
+				.more {
+					margin: 0;
+				}
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				gap: 30px;
+				align-items: flex-start;
+				.item {
+					width: 100%;
+					p {
+						color: $blue;
+						font-family: 'gt-medium';
+						font-weight: 500;
+						margin-bottom: 10px;
+					}
+					.stars {
+						display: flex;
+						gap: 6px;
+						img {
+							filter: grayscale(1);
+							&:hover {
+								filter: none;
+							}
+							&.active {
+								filter: none;
+							}
+						}
+					}
+				}
+				input,
+				textarea {
+					width: 100%;
+					font-size: 15px;
+					padding: 15px 0 14px 22px;
+					line-height: 26px;
+					border-radius: 8px;
+					border: 1px solid #ddd;
+					background: #fff;
+				}
 			}
 		}
+	}
+}
+
+@media (max-width: 1366px) {
+	.kurs {
+		margin: auto 20px;
 	}
 }

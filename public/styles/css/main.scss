@@ -94,6 +94,11 @@ button {
 		font-size: 13px;
 		color: $violet;
 	}
+	.stars {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
 }
 
 .gap-10 {
@@ -140,7 +145,7 @@ button {
 			justify-content: center;
 			&:hover {
 				opacity: 0.1;
-				background: $violet;
+				background-color: $darkviolet;
 				img {
 					filter: brightness(0) invert(1);
 				}
@@ -149,5 +154,21 @@ button {
 	}
 }
 
+.badge {
+	z-index: 2;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	padding: 9px 17px 7px 17px;
+	border-radius: 60px;
+	&.top {
+		background: $green;
+	}
+	&.new {
+		background: $red;
+	}
+}
+
 @import './classes.scss';
 @import './form.scss';
+@import './media.scss';

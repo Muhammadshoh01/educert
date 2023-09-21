@@ -11,37 +11,6 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-	.social {
-		display: flex;
-		gap: 72px;
-		align-items: center;
-		&__title {
-			color: $blue;
-			font-family: 'gt-medium';
-			font-size: 17px;
-			font-weight: 500;
-			line-height: 26px;
-		}
-		&__links {
-			display: flex;
-			gap: 24px;
-			a {
-				width: 40px;
-				height: 40px;
-				border-radius: 50%;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				&:hover {
-					opacity: 0.1;
-					background: $violet;
-					img {
-						filter: brightness(0) invert(1);
-					}
-				}
-			}
-		}
-	}
 	.center {
 		display: flex;
 		align-items: flex-start;

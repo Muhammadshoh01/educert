@@ -30,7 +30,7 @@
 	padding: 40px 50px 28px 40px;
 	background-image: url('~/public/img/news.png');
 	height: 350px;
-	width: 400px;
+	// width: 400px;
 	position: relative;
 	.date {
 		color: $blue;
@@ -90,5 +90,15 @@
 		display: flex;
 		gap: 15px;
 		align-items: center;
+	}
+}
+
+@media (max-width: 1366px) {
+	.news {
+		padding: 30px 40px 20px 30px;
+		.news__text {
+			line-height: auto;
+			font-size: 18px;
+		}
 	}
 }
