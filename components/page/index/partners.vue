@@ -22,4 +22,10 @@
 		justify-content: space-between;
 	}
 }
+
+@media (max-width: 1024px) {
+	.partners {
+		padding: 39px 20px;
+	}
+}
 </style>

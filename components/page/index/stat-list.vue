@@ -47,4 +47,17 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.stats {
+		&__item {
+			width: 50%;
+			padding: 15px 0;
+		}
+		&__list {
+			flex-wrap: wrap;
+			gap: 0;
+		}
+	}
+}
 </style>

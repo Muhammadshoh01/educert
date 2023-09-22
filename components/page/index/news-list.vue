@@ -13,6 +13,14 @@
 						delay: 4000,
 						disableOnInteraction: true,
 					}"
+					:breakpoints="{
+						1024: {
+							slidesPerView: 3,
+						},
+						768: {
+							slidesPerView: 2,
+						},
+					}"
 				>
 					<SwiperSlide v-for="slide in 10" :key="slide">
 						<news />

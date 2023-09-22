@@ -14,6 +14,11 @@
 					delay: 4000,
 					disableOnInteraction: true,
 				}"
+				:breakpoints="{
+					768: {
+						slidesPerView: 3,
+					},
+				}"
 			>
 				<SwiperSlide v-for="slide in 10" :key="slide">
 					<cardVue />

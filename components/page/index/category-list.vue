@@ -3,7 +3,7 @@
 		<div class="container">
 			<div class="title mb-50 text-center">Trenddagi turkumlar</div>
 			<div class="row">
-				<div class="col-6 mb-30" v-for="cat in 8">
+				<div class="col-6 col-md-8 mb-30" v-for="cat in 8">
 					<nuxt-link to="/courses/nodejs" class="category-box">
 						<div class="category-img">
 							<img src="/img/category-1.png" />

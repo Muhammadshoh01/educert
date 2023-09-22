@@ -5,7 +5,7 @@
 				<div class="title">EduCert bilan zamonaviy kasbga ega bo’ing</div>
 				<p>Har bir oq’uvchiga mos holatda dars rejasi shakllantirilgan</p>
 				<div class="row">
-					<div class="plus__items col-6" v-for="card in 4">
+					<div class="plus__items col-6 col-md-8" v-for="card in 4">
 						<div>
 							<div class="plus__img learn">
 								<img src="~/public/img/plus-1.svg" />

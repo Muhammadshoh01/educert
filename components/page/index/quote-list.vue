@@ -14,6 +14,14 @@
 					delay: 4000,
 					disableOnInteraction: true,
 				}"
+				:breakpoints="{
+					1024: {
+						slidesPerView: 3,
+					},
+					768: {
+						slidesPerView: 1,
+					},
+				}"
 			>
 				<SwiperSlide v-for="slide in 10" :key="slide">
 					<quoteVue />
@@ -43,6 +51,17 @@ import quoteVue from '../course/quote.vue'
 	.quote__slider {
 		margin-left: -330px;
 		margin-right: -330px;
+	}
+}
+
+@media (max-width: 768px) {
+	.quote__list {
+		.quote__slider {
+			margin-left: 0;
+			margin-right: 0;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 	}
 }
 </style>
