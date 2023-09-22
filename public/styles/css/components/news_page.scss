@@ -81,3 +81,11 @@
 		}
 	}
 }
+
+@media (max-width: 1024px) {
+	.xabar {
+		&__box {
+			gap: 20px;
+		}
+	}
+}

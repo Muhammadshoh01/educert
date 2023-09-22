@@ -40,10 +40,10 @@
 		.btn {
 			display: flex;
 			align-items: center;
+			padding: 21px 55px;
 			&.rounded,
 			&.bordered {
 				border-radius: 100px;
-				padding: 21px 55px;
 				font-family: 'gt-medium';
 			}
 			&.rounded {
@@ -60,6 +60,43 @@
 					background-color: $darkviolet;
 					color: #fff;
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.welcome {
+		height: auto;
+		padding-top: 50px;
+		&__body {
+			padding-bottom: 50px;
+			h1 {
+				font-size: 42px;
+			}
+			p {
+				max-width: 60%;
+			}
+			.btn {
+				padding: 15px 35px;
+			}
+		}
+		.container {
+			position: relative;
+			z-index: 1;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.welcome {
+		&__body {
+			h1,
+			p {
+				max-width: 100%;
+			}
+			img {
+				display: none;
 			}
 		}
 	}

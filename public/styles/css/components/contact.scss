@@ -100,3 +100,31 @@
 		padding: 21px 55px;
 	}
 }
+
+@media (max-width: 1024px) {
+	.contact {
+		&__head {
+			height: auto;
+			padding: 150px 0;
+		}
+		&__form {
+			right: 15px;
+		}
+		&__info {
+			padding: 100px 0 150px 0;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.contact {
+		&__form {
+			position: relative;
+			right: unset;
+		}
+		&__head {
+			height: auto;
+			padding: 50px 0;
+		}
+	}
+}

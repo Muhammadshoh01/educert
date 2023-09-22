@@ -11,6 +11,9 @@ header {
 	height: 93px;
 	top: 0;
 	z-index: 10;
+	.menu {
+		display: none;
+	}
 	.logo {
 		margin-right: 50px;
 	}

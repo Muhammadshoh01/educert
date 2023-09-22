@@ -58,4 +58,8 @@
 		width: percentage(calc($i / 24));
 		padding: 0 15px;
 	}
+	.col-md-#{$i} {
+		width: percentage(calc($i / 24));
+		padding: 0 15px;
+	}
 }

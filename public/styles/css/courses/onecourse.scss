@@ -9,11 +9,15 @@
 	}
 	.kurs {
 		background-image: url('~/public/img/course-bg.png');
+		// background-size: cover;
+		// background-repeat: no-repeat;
+		// background-position: center;
 		height: 480px;
 		max-width: 1500px;
 		margin: 0 auto;
 		position: relative;
 		padding-top: 90px;
+		margin-top: 90px;
 		color: #fff;
 		&__others {
 			padding-top: 130px;
@@ -72,24 +76,27 @@
 			background: #fff;
 			box-shadow: 0px 20px 30px 0px rgba(25, 25, 46, 0.04);
 			.video {
+				img {
+					width: 100%;
+				}
 				padding: 10px;
 				position: relative;
-				&-center {
-					position: absolute;
-					top: 12%;
-					left: 43%;
-					// transform: translateY(-50%);
-					width: 60px;
-					height: 60px;
-					border-radius: 50%;
-					background-color: #fff;
-					border-width: 7px;
-					border-color: rgba(255, 255, 255, 0.3);
-					box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
-					display: flex;
-					align-items: center;
-					justify-content: center;
-				}
+			}
+			.video-center {
+				position: absolute;
+				top: 12%;
+				left: 43%;
+				// transform: translateY(-50%);
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				background-color: #fff;
+				border-width: 7px;
+				border-color: rgba(255, 255, 255, 0.3);
+				box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
 		}
 		&__data {
@@ -619,5 +626,46 @@
 @media (max-width: 1366px) {
 	.kurs {
 		margin: auto 20px;
+	}
+}
+
+.courses {
+	.kurs {
+		padding-top: 20px;
+		margin-top: 0;
+		padding: 20px;
+		&__right {
+			width: 33%;
+		}
+		&__price {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__data {
+			padding: 20px;
+		}
+		ul {
+			padding: 30px 0 40px 0;
+		}
+		&__body {
+			.kurs__content {
+				.collapse__body ul li {
+					flex-direction: column;
+					align-items: flex-start;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.courses {
+		.kurs {
+			height: auto;
+			&__right {
+				width: 100%;
+				position: relative;
+			}
+		}
 	}
 }

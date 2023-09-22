@@ -91,3 +91,33 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.footer {
+		padding: 40px 0 30px 0;
+		.top {
+			padding-bottom: 25px;
+			.container {
+				flex-direction: column;
+				gap: 15px;
+			}
+		}
+		.center {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: flex-start;
+			padding: 30px 30px 90px;
+			row-gap: 20px;
+			.items {
+				width: 33%;
+			}
+		}
+		.bottom {
+			.container {
+				flex-direction: column;
+				row-gap: 10px;
+			}
+		}
+	}
+}
