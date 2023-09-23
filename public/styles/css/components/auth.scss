@@ -1,0 +1,68 @@
+@import '../vars.scss';
+.auth {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	&__img {
+		width: 40%;
+		background-image: url('~/public/img/authbg.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding: 20px 0;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		img {
+			filter: brightness(0) invert(1);
+		}
+	}
+	&__right {
+		background-color: #fefbf4;
+		width: 60%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	&__form {
+		max-width: 520px;
+		width: 100%;
+		padding: 50px;
+		background-color: #fff;
+		border-radius: 16px;
+		p {
+			margin-bottom: 30px;
+			color: $violet;
+			a {
+				color: $green;
+			}
+		}
+		.el-form {
+			label {
+				color: $blue;
+			}
+			.el-row {
+				align-items: center;
+			}
+			.forget {
+				font-size: 14px;
+				color: $green;
+				text-decoration: underline;
+			}
+			.more {
+				font-family: 'gt-medium';
+				font-weight: 500;
+				color: $blue;
+				width: 100%;
+				padding: 22px;
+				margin-top: 10px;
+				&:hover {
+					background-color: $darkviolet;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
