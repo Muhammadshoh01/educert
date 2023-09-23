@@ -67,11 +67,11 @@
 					</p>
 
 					<div class="row">
-						<div class="col-9">
+						<div>
 							<img src="~/public/img/news-box.png" />
 							<p>Donec purus posuere nullam lacus aliquam.</p>
 						</div>
-						<div class="col-9">
+						<div>
 							<img src="~/public/img/news-box.png" />
 							<p>Donec purus posuere nullam lacus aliquam.</p>
 						</div>
@@ -112,11 +112,41 @@
 					</div>
 				</div>
 			</div>
+			<div class="newsOne__latest">
+				<div class="container">
+					<div>
+						<div class="title text-center">Ohirgi yangiliklar</div>
+						<p class="text-center">10,000+ unique online course list designs</p>
+					</div>
+					<div class="newsOne__slider">
+						<Swiper
+							:modules="[SwiperAutoplay, SwiperEffectCreative]"
+							:slides-per-view="4"
+							:space-between="30"
+							:loop="true"
+							:autoplay="{
+								delay: 4000,
+								disableOnInteraction: true,
+							}"
+							:breakpoints="{
+								1024: {
+									slidesPerView: 3,
+								},
+							}"
+						>
+							<SwiperSlide v-for="slide in 10" :key="slide">
+								<latestNews />
+							</SwiperSlide>
+						</Swiper>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
 <script setup>
 import breadcrumbs from '~/components/page/index/breadcrumb.vue'
+import latestNews from '~/components/page/course/latest_news.vue'
 
 const links = ref([
 	{

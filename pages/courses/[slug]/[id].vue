@@ -1,10 +1,10 @@
 <template>
 	<div class="courses">
-		<breadcrumb :links="links" class="mb-90" />
+		<breadcrumb :links="links" />
 		<div class="kurs">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 kurs__info">
+					<div class="col-12 col-md-24 kurs__info">
 						<span class="badge top">TOP</span>
 						<h3>VueJS Frontend Dasturchi - 0 dan Ekspert gacha</h3>
 						<p>
@@ -106,7 +106,7 @@
 		<div class="kurs__body">
 			<div class="container">
 				<div class="row">
-					<div class="col-16">
+					<div class="col-16 col-md-24">
 						<div class="kurs__tabs">
 							<div
 								:class="`kurs__tab ${tab == 'kurs-haqida' ? 'active' : ''}`"
@@ -451,6 +451,14 @@
 						:autoplay="{
 							delay: 4000,
 							disableOnInteraction: true,
+						}"
+						:breakpoints="{
+							1024: {
+								slidesPerView: 3,
+							},
+							768: {
+								slidesPerView: 3,
+							},
 						}"
 					>
 						<SwiperSlide v-for="slide in 10" :key="slide">

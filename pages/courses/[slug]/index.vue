@@ -84,7 +84,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-8" v-for="card in 12">
+						<div class="col-8 col-md-12" v-for="card in 12">
 							<card class="small" />
 						</div>
 					</div>

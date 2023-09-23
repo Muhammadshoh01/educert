@@ -2,7 +2,7 @@
 	<div class="contact">
 		<div class="contact__head">
 			<div class="container">
-				<div class="col-9">
+				<div class="col-9 col-md-24">
 					<h1>Aloqa</h1>
 					<p>
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -34,7 +34,7 @@
 		<div class="contact__info">
 			<div class="container">
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 col-md-24">
 						<div class="row">
 							<div class="col-12 mb-90">
 								<h3>Bizning manzil</h3>
@@ -57,7 +57,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 col-md-24">
 						<div class="row">
 							<div class="col-12">
 								<h3>Email</h3>
